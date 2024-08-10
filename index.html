@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COFFEE</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- fav icone -->
+    <link rel="icon" type="image/png" href="data:image/png;base64,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">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Inter:wght@500&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img src="https://brewscoffee.netlify.app/icon.webp" alt="">
+        <h1>BREW BEANS Co.        </h1>
+    </header>
+    <div class="heading"><h4>Drink Coffee, Live Forever !!    </h4></div>
+    <section class="head">
+        <h1>Coffee tastes better when it is <strong> strong!</strong><br>
+           <strong> Do you agree?</strong></h1>
+
+           <div class="para">
+            <h4>A 2017 review of clinical trials found that drinking coffee is generally safe within usual levels of intake and is more likely to improve health outcomes than to cause harm at doses of 3 or 4 cups of coffee daily. Exceptions include possible increased risk in women having bone fractures, and a possible increased risk in pregnant women of fetal loss or decreased birth weight. Results were complicated by poor study quality, and differences in age, gender, health status, and serving size.</h4>
+           </div>
+    </section>
+    <section class="types">
+        <h1>Types</h1>
+        <p>Coffee beans are the seeds of a fruit called a coffee cherry. Coffee cherries grow on coffee trees from a genus of plants called Coffea. There are a wide variety of species of coffee plants, ranging from shrubs to trees.</p>
+        <ul>
+            <li> <strong>Type of bean. </strong>There are two main types of coffee species, Arabica and Robusta. Arabica originates from Ethiopia and produces a mild, flavorful tasting coffee. It is the most popular type worldwide. However, it is expensive to grow because the Arabica plant is sensitive to the environment, requiring shade, humidity, and steady temperatures between 60-75 degrees Fahrenheit. The Robusta coffee plant is more economical to grow because it is resistant to disease and survives in a wider range of temperatures between 65 - 97 degrees Fahrenheit. It can also withstand harsh climate changes such as variations in rainfall and strong sunlight.</li>
+            <li><strong>Type of roast.</strong> Coffee beans start out green. They are roasted at a high heat to produce a chemical change that releases the rich aroma and flavor associate with coffee. They are then cooled and ground for brewing. Roasting levels range from light to medium to dark. The lighter the roast, lighter the color and roasted flavor and the higher its acidity and a bitter roasted flavor. The popular french roast is medium-dark.</li>
+            <li><strong>Type of grind.</strong> A medium grind is the most common and used for automatic drip coffee makers. A fine grind is used for deeper flavors like espresso, releases the oils, and a coarse grind is used in coffee presses.</li>
+            <li> <strong>Decaffeinated coffee.</strong>This is an option for those who experience unpleasant side effects from caffeine. The two rnost cormon mnethods used to remove apply beans, caffeine regulations, which from at are coffee least then is 97% to of allowed the to chemical dry. caffeine The must solvents solvents be removed bind (methylene to to carry caffeine chloride the and Or both cthyl decaffeinated acctate) evaporate label, Or when carbon there the dioxide may beans be gas. are trace Both rinsed are residual andjor amounts dried. to of stcamed used According caffeine. or to soaked Both U.S. applied methods may cause somne loss of flavor as other naturally occurring chemicals in coffee beans that impart their unique flavor and scent may be destroyed during processing.</li>
+        </ul>
+    </section>
+    <section id="brands">
+        <h1>TOP BRANDS</h1>
+        <div class="col">
+            <div class="image1">
+                <img src="https://media.istockphoto.com/id/534200892/photo/composition-with-cup-of-starbucks-coffee-and-beans.jpg?s=612x612&w=0&k=20&c=VhfJKXV43cGPXObmvzISSmQSVkRG8XwLlSwNfedidys=" alt="">
+            </div>
+            <div class="row1">
+                <h4><strong>1. STARBUCKS</strong></h4><br>
+            <p>The brand is not known for sourcing and roasting the best coffee beans. Most of their coffee beans are dark roasted meaning, they taste bitter. And many consumers, who know their coffee, complain that Starbucks coffee has a distinct burnt taste</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row2">
+                <h4><strong>2. Dunkin' Donuts</strong></h4><br>
+            <p>Bill Rosenberg opened Open Kettle in 1948, a restaurant selling donuts and coffee in Quincy, Massachusetts (a suburb of Boston), but he changed the name in 1950 to Dunkin' Donuts after discussing with company executives.[11][12] He conceived the idea for the restaurant after his experiences selling food in factories and at construction sites, where donuts and coffee were the two most popular items.</p>
+            </div>
+            <div class="image2">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.A1LaXB7aCDvKu1XLESKxIAD6D6&pid=Api&P=0" alt="">
+            </div>
+        </div>
+        <div class="col">
+            <div class="image3">
+                <img src="https://brewscoffee.netlify.app/PEET'S%20COFFEES.jpg" alt="">
+            </div>
+            <div class="row3">
+                <h4><strong>3. PEET'S COFFEE</strong></h4><br>
+            <p>Founded in 1966, Peet’s Coffee is a San Francisco Bay Area-based specialty coffee roaster and retailer. The company sells various coffee beans, teas, and related items through its retail stores and online store. Costco is a membership warehouse club, founded in 1983 in Seattle, Washington, that offers its members a variety of products, including food, electronics, and home goods.</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row4">
+                <h4><strong>4. COSTA COFFEE</strong></h4><br>
+            <p>Costa Coffee was founded in London in 1971 by Sergio Costa as a wholesale operation supplying roasted coffee to caterers and specialist Italian coffee shops. It was acquired by Whitbread in 1995, sold in 2019 to The Coca-Cola Company in a deal worth £3.9bn, and has grown to 3,401 stores across 31 countries and 18,412 employees.</p>
+            </div>
+            <div class="image4">
+                <img src="https://brewscoffee.netlify.app/COSTA%20COFFEE.jpg" alt="">
+            </div>
+        </div>
+        <div class="col">
+            <div class="image5">
+                <img src="https://brewscoffee.netlify.app/Mc%20cafe.jpg" alt="">
+            </div>
+            <div class="row5">
+                <h4><strong>5. Mc CAFE</strong></h4><br>
+            <p>McDonald’s top brass wanted to capitalize on the growing popularity of coffee pubs which was started by the success of Starbucks and they launched the first coffee and beverage chain McCafe in Australia in the year 1993. McCafe proved to be more successful than the fast food chain itself and is the largest coffee chain in Australia and New Zealand.</p>
+            </div>
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="main">
+                <h1>Gallery</h1>
+            <div class="pics">
+                <div class="pic">
+                    <img src="https://brewscoffee.netlify.app/c5.jpg" alt="">
+                </div>
+                <div class="pic">
+                    <img src="https://brewscoffee.netlify.app/c4.jpg" alt="">
+                </div>
+                <div class="pic">
+                    <img src="https://brewscoffee.netlify.app/c6.jpg" alt="">
+                </div>
+                <div class="pic">
+                    <img src="https://brewscoffee.netlify.app/c7.jpg" alt="">
+                </div>
+                <div class="pic">
+                    <img src="https://brewscoffee.netlify.app/c2.jpg" alt="">
+                </div>
+                <div class="pic">
+                    <img src="https://brewscoffee.netlify.app/c9.jpg" alt="">
+                </div>
+                <div class="pic">
+                    <img src="https://brewscoffee.netlify.app/c8.jpg" alt="">
+                </div>
+                <div class="pic">
+                    <img src="https://brewscoffee.netlify.app/c3.jpg" alt="">
+                </div>
+                <div class="pic">
+                    <img src="https://brewscoffee.netlify.app/c1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="end">
+        <h1>HAVE SOME QUERY?</h1>
+        <div class="query">
+            <form action="">
+                <label for="">Your Name:</label><br>
+                <input type="text"><br>
+                <label for="">Your Email:</label><br>
+                <input type="text"><br>
+                <label for="">Query</label><br>
+                <textarea name="" id="" cols="20" rows="10"></textarea><br>
+                <button>SEND</button>
+            </form>
+        </div>
+        <div class="footer">
+            <div class="icon">
+                <img src="https://brewscoffee.netlify.app/icon.webp" alt="">
+            </div>
+            <div class="reach">
+                <h1>REACH US</h1>
+                <h4><span>Instagram </span> <span>Facebook</span> <span>Twitter</span></h4><br>
+                <h4>© 2023 BREW BEANS Co.</h4>
+            </div>
+            <div class="address">
+                <h1>ADDRESS</h1>
+                <h4>13031 West Jefferson Boulevard, Suite 200 <br>
+                    Los Angeles, CA, USA <br>
+                    90094</h4>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
